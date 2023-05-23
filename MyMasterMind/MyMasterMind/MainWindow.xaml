@@ -1,0 +1,20 @@
+﻿<Window x:Class="MyMasterMind.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:mmc="clr-namespace:MyMasterMind.Controls"
+        mc:Ignorable="d"
+        Title="MyMasterMind" Height="450" Width="400" MinHeight="500" MinWidth="350">
+    <Grid Name="MyMasterMindGrid" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"   />
+            <ColumnDefinition Width="120" MinWidth="150" MaxWidth="150" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" MinHeight="200" />
+        </Grid.RowDefinitions>
+        <mmc:MasterMindBoard Grid.Row="0" Grid.Column="0" />
+        <mmc:MasterMindCommands Grid.Row="0" Grid.Column="1" />
+    </Grid>
+</Window>
